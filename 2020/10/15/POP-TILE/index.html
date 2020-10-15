@@ -5,15 +5,24 @@
   
 
   
-  <title>메모</title>
+  <title>POPTILE | 메모</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="메모">
-<meta property="og:url" content="bedrock17.github.io/index.html">
+  <meta name="description" content="친구가 만들었던게임이 개인적으로 재미있어 그 게임을 웹으로 다시 만드는 토이프로젝트를 진행하였습니다. 서비스 링크 http:&#x2F;&#x2F;s0af.panty.run&#x2F; 당시에는 친구가 무엇을 보고 만들었었는지, 기존에 이런 프로그램이 있었는지 몰랐었지만 찾아보니 바로 무엇을 보고 만들었는지 알 수 있었습니다.  오히려 처음부터 원본게임을 안보고 만들었기에 개인적인 의견">
+<meta property="og:type" content="article">
+<meta property="og:title" content="POPTILE">
+<meta property="og:url" content="bedrock17.github.io/2020/10/15/POP-TILE/index.html">
 <meta property="og:site_name" content="메모">
+<meta property="og:description" content="친구가 만들었던게임이 개인적으로 재미있어 그 게임을 웹으로 다시 만드는 토이프로젝트를 진행하였습니다. 서비스 링크 http:&#x2F;&#x2F;s0af.panty.run&#x2F; 당시에는 친구가 무엇을 보고 만들었었는지, 기존에 이런 프로그램이 있었는지 몰랐었지만 찾아보니 바로 무엇을 보고 만들었는지 알 수 있었습니다.  오히려 처음부터 원본게임을 안보고 만들었기에 개인적인 의견">
 <meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://img.youtube.com/vi/gB408th4uk8/0.jpg">
+<meta property="article:published_time" content="2020-10-15T14:44:44.114Z">
+<meta property="article:modified_time" content="2020-10-15T14:52:12.578Z">
 <meta property="article:author" content="seok hwan">
+<meta property="article:tag" content="Go">
+<meta property="article:tag" content="Vuejs">
+<meta property="article:tag" content="Cross Platform">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://img.youtube.com/vi/gB408th4uk8/0.jpg">
   
     <link rel="alternate" href="/atom.xml" title="메모" type="application/atom+xml">
   
@@ -62,9 +71,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-POP-TILE" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-POP-TILE" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/10/15/POP-TILE/" class="article-date">
   <time datetime="2020-10-15T14:44:44.114Z" itemprop="datePublished">2020-10-15</time>
@@ -77,8 +84,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/15/POP-TILE/">POPTILE</a>
+    <h1 class="article-title" itemprop="name">
+      POPTILE
     </h1>
   
 
@@ -120,95 +127,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-rpi-swapresize" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/30/rpi-swapresize/" class="article-date">
-  <time datetime="2020-09-30T05:05:35.576Z" itemprop="datePublished">2020-09-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/30/rpi-swapresize/">라즈베리파이 swap사이즈 조절</a>
-    </h1>
+    <a href="/2020/09/30/rpi-swapresize/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">이전</strong>
+      <div class="article-nav-title">라즈베리파이 swap사이즈 조절</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>라즈베리파이3 위에 웹으로 이미지를 보여주는 서비스를 올렸지만 해상도가 매우 큰 이미지를 처리할 떄 메모리가 부족하여 죽는다.<br>Golang GC가 늦게 도는 것인지 메모리가 정리되기 이전에 OOM킬러에 걸려 서비스가 죽는 것으로 의심되어<br>최소한 서비스가 죽지 않도록 하드디스크에 스왑영역을 크게 할당하여 서비스가 죽지 않도록 하였다.</p>
-<h2 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h2><p><a href="https://geeksvoyage.com/raspberry%20pi/swapfile-for-pi/" target="_blank" rel="noopener">https://geeksvoyage.com/raspberry%20pi/swapfile-for-pi/</a></p>
-<h2 id="dphys-swapfile-종료-시작"><a href="#dphys-swapfile-종료-시작" class="headerlink" title="dphys-swapfile 종료 / 시작"></a>dphys-swapfile 종료 / 시작</h2><p>sudo /etc/init.d/dphys-swapfile stop<br>sudo /etc/init.d/dphys-swapfile start</p>
-<h2 id="설정-파일"><a href="#설정-파일" class="headerlink" title="설정 파일"></a>설정 파일</h2><p>/etc/dphys-swapfile</p>
-<h2 id="수정-내용"><a href="#수정-내용" class="headerlink" title="수정 내용"></a>수정 내용</h2><p>CONF_SWAPFILE=[SWAP 경로]<br>CONF_SWAPSIZE=1024 #MB</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="bedrock17.github.io/2020/09/30/rpi-swapresize/" data-id="ckfoxiju50000fktyamqa30y7" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/raspberrypi/" rel="tag">raspberrypi</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-golang-update" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/30/golang-update/" class="article-date">
-  <time datetime="2020-09-30T02:05:05.359Z" itemprop="datePublished">2020-09-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/30/golang-update/">Golang 업그레이드</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="수동-삭제"><a href="#수동-삭제" class="headerlink" title="수동 삭제"></a>수동 삭제</h1><p>sudo rm -rf /usr/local/go</p>
-<h1 id="수동-다운로드"><a href="#수동-다운로드" class="headerlink" title="수동 다운로드"></a>수동 다운로드</h1><p>downlaod: <a href="https://golang.org/dl/" target="_blank" rel="noopener">https://golang.org/dl/</a></p>
-<h1 id="수동-설치"><a href="#수동-설치" class="headerlink" title="수동 설치"></a>수동 설치</h1><p>sudo tar -C /usr/local -xzf [FilePath]</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="bedrock17.github.io/2020/09/30/golang-update/" data-id="ckfor6bd30004csty6lp8cs8p" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Go/" rel="tag">Go</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programing/" rel="tag">programing</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
