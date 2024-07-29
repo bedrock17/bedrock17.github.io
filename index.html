@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>메모</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="메모">
+<meta property="og:url" content="https://bedrock17.github.io/index.html">
+<meta property="og:site_name" content="메모">
+<meta property="og:locale" content="ko_KR">
+<meta property="article:author" content="seok hwan">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="메모" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">메모</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="검색"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://bedrock17.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-POP-TILE" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/15/POP-TILE/" class="article-date">
+  <time datetime="2020-10-14T15:00:00.000Z" itemprop="datePublished">2020-10-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/15/POP-TILE/">POPTILE</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>친구가 만들었던게임이 개인적으로 재미있어 그 게임을 웹으로 다시 만드는 토이프로젝트를 진행하였습니다.</p>
+<p><del>~ 서비스 링크 <a target="_blank" rel="noopener" href="http://s0af.panty.run/">http://s0af.panty.run/</a> ~</del><br>바뀐 서비스 링크 <a target="_blank" rel="noopener" href="https://poptile.firekann.dev/">https://poptile.firekann.dev/</a></p>
+<p>당시에는 친구가 무엇을 보고 만들었었는지, 기존에 이런 프로그램이 있었는지 몰랐었지만 찾아보니 바로 무엇을 보고 만들었는지 알 수 있었습니다.</p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=gB408th4uk8"><img src="http://img.youtube.com/vi/gB408th4uk8/0.jpg" alt="POPTILE Trailer"></a></p>
+<p>오히려 처음부터 원본게임을 안보고 만들었기에 개인적인 의견, 플레이해본 다른사람들의 의견을 가지고 재밌게 개발한거같네요. 메인로직만 비슷하지 배치, 테마, 점수산정, 효과 모든게 다 다르게 되었습니다.</p>
+<h2 id="초기-구현"><a href="#초기-구현" class="headerlink" title="초기 구현"></a>초기 구현</h2><p>jsfiddle: <a target="_blank" rel="noopener" href="https://jsfiddle.net/_cube/qpo4jvx3/">https://jsfiddle.net/_cube/qpo4jvx3/</a></p>
+<p>2017년도에 이 코드를 작성했던거 같은데 HTML Canvas태그와 자바스크립트를 사용해 간단한 게임을 만드는것에 관심이 있어 만들만한걸 생각하다가 친구의 게임을 생각해 만들었었습니다.</p>
+<p>현재의 제가 당시 코드를 평가하자면.. 요즘 자바스크립트 코드와 스타일이 약간 다르고, 실제로 그랬지만 일단 뭔가 실행되는 걸 보고싶어 구현만 신경썻다 라는 느낌을 받습니다. 모든 변수 선언 키워드가 var이고 구현에 필요한 변수들도 모두 전역변수에 놓은점이 유독 눈에 띄네요.</p>
+<p>그래도 상수 역할을 하는 변수와, 각 코드의 역할이 명확하여 나쁘지 않은거같습니다.</p>
+<h2 id="다시-만들게-된-앞배경"><a href="#다시-만들게-된-앞배경" class="headerlink" title="다시 만들게 된 앞배경"></a>다시 만들게 된 앞배경</h2><p>시간이 흘러 개인 프로젝트를 진행할 때 주력 무기(?) 가 될만한 도구를 찾고있었습니다.<br>아래 요구사항을 가능한 만족하는 도구들을 찾고있었습니다.</p>
+<ul>
+<li><p>빠른 프로젝트 구성<br>C, C++, 기타 무언가 설치할게 많은 프레임워크 및 언어 들은 프로젝트 초기 구성이 너무 번거롭다 느껴졌습니다. 그렇지 않은 언어와 프레임워크를 찾고있었죠.<br>후보 언어로는 Go, 파이썬, Nodejs 등이 있었습니다.</p>
+</li>
+<li><p>어디서든 개발가능하고 실행가능한 프로젝트<br>라즈베리파이, 윈도우 PC, 우분투 서버 등, 아키텍처, OS 모두 다른 환경을 가지고있었기에 가능한 어디서든 돌리기도 쉽고 개발환경이 없는곳에서조차 빌드된 결과물만 가지고 실행하고 싶었습니다.<br>이쯤에서 Go는 확정적이였습니다.</p>
+</li>
+<li><p>개발하기도 쉽고, 접근성 좋은 UI<br>개발은 편하게 했다치고 이제 만든 프로그램을 누군가와 공유해야 하니 빌드된 바이너리를 배포하던 앱을 스토어에 올린다던가 웹서비스를 연다던가 하는 배포 문제와 쉬운 UI개발을 할 방법을 찾고있었습니다.<br>브라우저만 있다면 볼 수 있는 웹이 가장 적합했고 당시 제 기준에서 인기 많고 쉬운 Vue를 사용하기로 하였습니다.</p>
+</li>
+</ul>
+<h2 id="진행-및-결과"><a href="#진행-및-결과" class="headerlink" title="진행 및 결과"></a>진행 및 결과</h2><p>이제 정한 도구들로 무언가를 만들어야 하는데 이왕이면 사람들의 관심을 끌 수 있고 이미 제가 만들어놓은걸 활용하고 싶어 묵혀두었던 jsfiddle에 있던 팝타일 코드와 “Go 언어 웹 프로그래밍 철저 입문” 이라는 프레임워크 없이 내장 http모듈을 가지고 웹서비스를 만드는 책을 참고하여 만들다가 만  조잡한 자체 웹 프레임워크로 개발을 시작하였습니다.</p>
+<p>팝타일 코드를 타입스크립트로 바꾸고 다듬은 다음 Vue로 작성된 UI에 연결하였습니다.<br>서버가 하는일이 굉장히 단순하여 조잡한 도구로도 특별히 지장이 없었습니다.<br>API 요청이 오면 데이터를 처리하고 Vue로 빌드된 정적 파일을 날라주고 하는일이 그것 외 없었기에 무난히 구현되어 주변 지인및 오픈채팅방에 링크를 배포했고 수십명가량 플레이 해주었습니다.</p>
+<p>초기 배포는 집에 설치되어있던 라즈베리파이를 가지고 서비스를 하였는데 이를 안타깝게 여긴 지인이 팀블로그인 panty.run에 도커로 제가 제어 가능한 부분을 할당해주었고 그곳에 서비스가 올라가 지금 구성이 완성되었습니다.</p>
+<h2 id="같이-읽으면-좋은글"><a href="#같이-읽으면-좋은글" class="headerlink" title="같이 읽으면 좋은글"></a>같이 읽으면 좋은글</h2><p>Docker로 한 서버를 여러 사람이 독립적으로 사용할 수 있는 환경 만들기<br><a target="_blank" rel="noopener" href="https://xo.dev/setup-virtual-environment-for-guests-with-docker/">https://xo.dev/setup-virtual-environment-for-guests-with-docker/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bedrock17.github.io/2020/10/15/POP-TILE/" data-id="clz6frr5i000197yo71wec5dw" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cross-Platform/" rel="tag">Cross Platform</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Go/" rel="tag">Go</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vuejs/" rel="tag">Vuejs</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-golang-update" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/30/golang-update/" class="article-date">
+  <time datetime="2020-09-29T15:00:00.000Z" itemprop="datePublished">2020-09-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/30/golang-update/">Golang 업그레이드</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="수동-삭제"><a href="#수동-삭제" class="headerlink" title="수동 삭제"></a>수동 삭제</h1><p>sudo rm -rf /usr/local/go</p>
+<h1 id="수동-다운로드"><a href="#수동-다운로드" class="headerlink" title="수동 다운로드"></a>수동 다운로드</h1><p>downlaod: <a target="_blank" rel="noopener" href="https://golang.org/dl/">https://golang.org/dl/</a></p>
+<h1 id="수동-설치"><a href="#수동-설치" class="headerlink" title="수동 설치"></a>수동 설치</h1><p>sudo tar -C /usr/local -xzf [FilePath]</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bedrock17.github.io/2020/09/30/golang-update/" data-id="clz6frr5j000297yod3z66pic" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Go/" rel="tag">Go</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programing/" rel="tag">programing</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-rpi-swapresize" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/30/rpi-swapresize/" class="article-date">
+  <time datetime="2020-09-29T15:00:00.000Z" itemprop="datePublished">2020-09-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/30/rpi-swapresize/">라즈베리파이 swap사이즈 조절</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>라즈베리파이3 위에 웹으로 이미지를 보여주는 서비스를 올렸지만 해상도가 매우 큰 이미지를 처리할 떄 메모리가 부족하여 죽는다.<br>Golang GC가 늦게 도는 것인지 메모리가 정리되기 이전에 OOM킬러에 걸려 서비스가 죽는 것으로 의심되어<br>최소한 서비스가 죽지 않도록 하드디스크에 스왑영역을 크게 할당하여 서비스가 죽지 않도록 하였다.</p>
+<h2 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h2><p><a target="_blank" rel="noopener" href="https://geeksvoyage.com/raspberry%20pi/swapfile-for-pi/">https://geeksvoyage.com/raspberry%20pi/swapfile-for-pi/</a></p>
+<h2 id="dphys-swapfile-종료-시작"><a href="#dphys-swapfile-종료-시작" class="headerlink" title="dphys-swapfile 종료 / 시작"></a>dphys-swapfile 종료 / 시작</h2><p>sudo /etc/init.d/dphys-swapfile stop<br>sudo /etc/init.d/dphys-swapfile start</p>
+<h2 id="설정-파일"><a href="#설정-파일" class="headerlink" title="설정 파일"></a>설정 파일</h2><p>/etc/dphys-swapfile</p>
+<h2 id="수정-내용"><a href="#수정-내용" class="headerlink" title="수정 내용"></a>수정 내용</h2><p>CONF_SWAPFILE=[SWAP 경로]<br>CONF_SWAPSIZE=1024 #MB</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bedrock17.github.io/2020/09/30/rpi-swapresize/" data-id="clz6frr5n000d97yo8l4g47pi" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/raspberrypi/" rel="tag">raspberrypi</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">태그</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cross-Platform/" rel="tag">Cross Platform</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Go/" rel="tag">Go</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vuejs/" rel="tag">Vuejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programing/" rel="tag">programing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberrypi/" rel="tag">raspberrypi</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">태그 클라우드</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Cross-Platform/" style="font-size: 10px;">Cross Platform</a> <a href="/tags/Go/" style="font-size: 20px;">Go</a> <a href="/tags/Vuejs/" style="font-size: 10px;">Vuejs</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/programing/" style="font-size: 10px;">programing</a> <a href="/tags/raspberrypi/" style="font-size: 10px;">raspberrypi</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">아카이브</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">10월 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">9월 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">최근 포스트</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/15/POP-TILE/">POPTILE</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/30/golang-update/">Golang 업그레이드</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/30/rpi-swapresize/">라즈베리파이 swap사이즈 조절</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2024 seok hwan<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
