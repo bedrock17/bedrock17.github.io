@@ -3,6 +3,17 @@
 <head>
   <meta charset="utf-8">
   
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S723NY6WMM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-S723NY6WMM');
+    </script>
+    <!-- End Google Analytics -->
+
 
   
   <title>POPTILE | 메모</title>
@@ -16,7 +27,7 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="http://img.youtube.com/vi/gB408th4uk8/0.jpg">
 <meta property="article:published_time" content="2020-10-14T15:00:00.000Z">
-<meta property="article:modified_time" content="2024-07-29T03:50:56.410Z">
+<meta property="article:modified_time" content="2024-07-29T04:56:17.735Z">
 <meta property="article:author" content="seok hwan">
 <meta property="article:tag" content="Go">
 <meta property="article:tag" content="Vuejs">
@@ -115,11 +126,13 @@
 <p>팝타일 코드를 타입스크립트로 바꾸고 다듬은 다음 Vue로 작성된 UI에 연결하였습니다.<br>서버가 하는일이 굉장히 단순하여 조잡한 도구로도 특별히 지장이 없었습니다.<br>API 요청이 오면 데이터를 처리하고 Vue로 빌드된 정적 파일을 날라주고 하는일이 그것 외 없었기에 무난히 구현되어 주변 지인및 오픈채팅방에 링크를 배포했고 수십명가량 플레이 해주었습니다.</p>
 <p>초기 배포는 집에 설치되어있던 라즈베리파이를 가지고 서비스를 하였는데 이를 안타깝게 여긴 지인이 팀블로그인 panty.run에 도커로 제가 제어 가능한 부분을 할당해주었고 그곳에 서비스가 올라가 지금 구성이 완성되었습니다.</p>
 <h2 id="같이-읽으면-좋은글"><a href="#같이-읽으면-좋은글" class="headerlink" title="같이 읽으면 좋은글"></a>같이 읽으면 좋은글</h2><p>Docker로 한 서버를 여러 사람이 독립적으로 사용할 수 있는 환경 만들기<br><a target="_blank" rel="noopener" href="https://xo.dev/setup-virtual-environment-for-guests-with-docker/">https://xo.dev/setup-virtual-environment-for-guests-with-docker/</a></p>
+<h2 id="간략한-이후-이야기"><a href="#간략한-이후-이야기" class="headerlink" title="간략한 이후 이야기"></a>간략한 이후 이야기</h2><p>이 게임을 멀티플레이를 추가하자 라는 안건이 나왔고 22년도에 진행됐습니다.<br>서버는 go로유지하되 프레임워크를 자체개발 프레임워크에서 echo로 변경되었고.<br>프론트는 리액트로 변경되어 다시 개발하였습니다.</p>
+<p>간간히 <a target="_blank" rel="noopener" href="https://velog.io/@uniaut/PoptileRL-%ED%9B%84%EA%B8%B0">https://velog.io/@uniaut/PoptileRL-%ED%9B%84%EA%B8%B0</a> 이런 글의 소식도 들려오고 아직까지 쏠쏠한(?) 콘텐츠입니다.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://bedrock17.github.io/2020/10/15/POP-TILE/" data-id="clz6frr5i000197yo71wec5dw" class="article-share-link">공유</a>
+      <a data-url="https://bedrock17.github.io/2020/10/15/POP-TILE/" data-id="clz6iqkv50003uhyo05si5olk" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cross-Platform/" rel="tag">Cross Platform</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Go/" rel="tag">Go</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vuejs/" rel="tag">Vuejs</a></li></ul>
@@ -131,9 +144,9 @@
 <nav id="article-nav">
   
   
-    <a href="/2020/09/30/golang-update/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/09/30/rpi-swapresize/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">이전</strong>
-      <div class="article-nav-title">Golang 업그레이드</div>
+      <div class="article-nav-title">라즈베리파이 swap사이즈 조절</div>
     </a>
   
 </nav>
@@ -188,11 +201,11 @@
           </li>
         
           <li>
-            <a href="/2020/09/30/golang-update/">Golang 업그레이드</a>
+            <a href="/2020/09/30/rpi-swapresize/">라즈베리파이 swap사이즈 조절</a>
           </li>
         
           <li>
-            <a href="/2020/09/30/rpi-swapresize/">라즈베리파이 swap사이즈 조절</a>
+            <a href="/2020/09/30/golang-update/">Golang 업그레이드</a>
           </li>
         
       </ul>
